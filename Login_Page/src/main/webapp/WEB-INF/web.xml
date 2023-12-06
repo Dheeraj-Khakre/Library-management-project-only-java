@@ -1,0 +1,61 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>com</servlet-name>
+  	<display-name>com</display-name>
+  	<description></description>
+  	<servlet-class>LoginPage.com</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Sign_In_Page</servlet-name>
+  	<display-name>Sign_In_Page</display-name>
+  	<description></description>
+  	<servlet-class>com.Sign_In_Page</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Admin_Page</servlet-name>
+  	<display-name>Admin_Page</display-name>
+  	<description></description>
+  	<servlet-class>com.Admin_Page</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserDataServlet</servlet-name>
+  	<display-name>UserDataServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.UserDataServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>BookDetailsServlet</servlet-name>
+  	<display-name>BookDetailsServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.BookDetailsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>com</servlet-name>
+  	<url-pattern>/com</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Sign_In_Page</servlet-name>
+  	<url-pattern>/Sign_In_Page</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Admin_Page</servlet-name>
+  	<url-pattern>/Admin_Page</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UserDataServlet</servlet-name>
+  	<url-pattern>/UserDataServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BookDetailsServlet</servlet-name>
+  	<url-pattern>/bookdetails</url-pattern>
+  </servlet-mapping>
+</web-app>
+
