@@ -43,25 +43,32 @@
 <body>
     <div class="navbar">
         <a href="userdata">Users</a>
-        <a href="bookdetails">Books</a>
+        <a href="bookdata">Books</a>
         <a href="#payments">Payments</a>
     </div>
     <div id="users" class="section">
         <h2>User Information</h2>
-        <input type="text" id="userSearch" placeholder="Search users...">
+        <form action="usersearch" method="post">
+        <input type="email" id="email" name="eamilsearch" placeholder="Search user by email...">
+        <button type="submit">Go</button>
+    </form>
         <table>
             <!-- User information goes here -->
         </table>
     </div>
     <div id="books" class="section">
         <h2>Book Information</h2>
-        <input type="text" id="bookSearch" placeholder="Search books...">
+        <form action="booksearchs" method="post">
+        <input type="text" id="book_name" name="book_name" placeholder="Search book here by name...">
+        <button type="submit">Go</button>
+    </form>
         <table>
             <!-- Book information goes here -->
         </table>
     </div>
     <div id="payments" class="section">
         <h2>Payment Control</h2>
+        
         <table>
             <!-- Payment information goes here -->
         </table>

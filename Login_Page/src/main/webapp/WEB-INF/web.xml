@@ -37,6 +37,18 @@
   	<description></description>
   	<servlet-class>com.BookDetailsServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>UserSearch</servlet-name>
+  	<display-name>UserSearch</display-name>
+  	<description></description>
+  	<servlet-class>searchingData.UserSearch</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>booksearch</servlet-name>
+  	<display-name>booksearch</display-name>
+  	<description></description>
+  	<servlet-class>searchingData.BookSearch</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>com</servlet-name>
   	<url-pattern>/com</url-pattern>
@@ -56,6 +68,14 @@
   <servlet-mapping>
   	<servlet-name>BookDetailsServlet</servlet-name>
   	<url-pattern>/bookdetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UserSearch</servlet-name>
+  	<url-pattern>/UserSearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>booksearch</servlet-name>
+  	<url-pattern>/booksearch</url-pattern>
   </servlet-mapping>
 </web-app>
 
