@@ -14,6 +14,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -77,7 +78,20 @@ protected void doGet(HttpServletRequest req, HttpServletResponse res) throws Ser
 			ps.setString(7, country);
 			ps.setString(8, city);
 			int x = ps.executeUpdate();
-			if (x > 0) out.println("data entered sucessfully");
+			if (x > 0) {
+				out.println("data entered sucessfully");
+				String Name = Fname+Lname;
+				Cookie cookieName= new Cookie("name",Name);
+				Cookie cookieEmail= new Cookie("email",email);
+				Cookie cookiePsw= new Cookie("passwors",password);
+				res.addCookie(cookieName);
+				res.addCookie(cookieEmail);
+				res.addCookie(cookiePsw);
+				out.println("cookies added sucessefully");
+				RequestDispatcher rd= req.getRequestDispatcher("/login.html");
+				rd.include(req, res);
+				
+			}
 			else out.println("data entered un-sucessfully");
 		} catch (SQLException | ClassNotFoundException s) {
 			// TODO Auto-generated catch block

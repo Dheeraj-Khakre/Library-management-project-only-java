@@ -7,7 +7,7 @@
     <welcome-file>login.html</welcome-file>
   </welcome-file-list>
    <display-name>Archetype Created Web Application</display-name>
-  <servlet>
+  <!-- <servlet>
   	<servlet-name>com</servlet-name>
   	<display-name>com</display-name>
   	<description></description>
@@ -49,6 +49,24 @@
   	<description></description>
   	<servlet-class>searchingData.BookSearch</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ResetPasswordServlet</servlet-name>
+  	<display-name>ResetPasswordServlet</display-name>
+  	<description></description>
+  	<servlet-class>reset_Password_Mail.ResetPasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SetNewPsw</servlet-name>
+  	<display-name>SetNewPsw</display-name>
+  	<description></description>
+  	<servlet-class>reset_Password_Mail.SetNewPsw</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Comform_OTP</servlet-name>
+  	<display-name>Comform_OTP</display-name>
+  	<description></description>
+  	<servlet-class>reset_Password_Mail.Comform_OTP</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>com</servlet-name>
   	<url-pattern>/com</url-pattern>
@@ -77,5 +95,17 @@
   	<servlet-name>booksearch</servlet-name>
   	<url-pattern>/booksearch</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ResetPasswordServlet</servlet-name>
+  	<url-pattern>/ResetPasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SetNewPsw</servlet-name>
+  	<url-pattern>/SetNewPsw</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Comform_OTP</servlet-name>
+  	<url-pattern>/Comform_OTP</url-pattern>
+  </servlet-mapping> -->
 </web-app>
 
